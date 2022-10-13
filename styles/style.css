@@ -1,0 +1,169 @@
+body {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #4e4e4e;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #7c7474;
+}
+
+.none {
+  display: none;
+}
+
+.header {
+  display: flex;
+  height: 130px;
+}
+
+.header__logo {
+  margin: 40px 100px auto 120px;
+}
+
+.header__nav {
+  display: flex;
+  padding: 0px;
+  gap: 25px;
+  width: 782px;
+  height: 27px;
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.header__icons {
+  display: flex;
+  gap: 10px;
+  width: 200px;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.skindom__title {
+  font-size: 90px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 120px;
+  top: 130px;
+}
+
+.skindom__text {
+  font-size: 24px;
+  position: absolute;
+  left: 120px;
+  top: 295px;
+}
+
+.skindom__btn {
+  position: absolute;
+  left: 120px;
+  top: 380px;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  height: 58px;
+  width: 268px;
+  background-color: black;
+  color: #ffffff;
+}
+
+.whoWe {
+  height: 480px;
+  margin-left: 121px;
+  margin-top: 68px;
+}
+
+.whoWe__container {
+  display: flex;
+}
+
+.whoWe__container-text {
+  margin-left: 72px;
+  width: 669px;
+}
+
+.whoWe__container-title {
+  font-size: 32px;
+}
+
+.whoWe__container-about {
+  font-size: 16px;
+}
+
+.whoWe__container-link {
+  font-size: 16px;
+  line-height: 150%;
+  color: #cc4c6e;
+}
+
+.whoWe__list {
+  display: flex;
+  gap: 26px;
+  text-align: center;
+  margin-left: -40px;
+  margin-top: 36px;
+}
+
+.whoWe__list-item {
+  font-size: 18px;
+  color: #464646;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  min-width: 305px;
+  height: 50px;
+  padding-top: 30px;
+}
+
+.footer {
+  display: grid;
+  grid-template-areas:
+    "about catalog info social"
+    "about catalog pay pay";
+}
+
+.footer__about {
+  grid-area: about;
+}
+
+.footer__catalog {
+  grid-area: catalog;
+}
+
+.footer__info {
+  grid-area: info;
+}
+
+.footer__social {
+  grid-area: social;
+}
+
+.footer__pay {
+    grid-area: pay;
+}
+
+/* .footer__urInfo {
+  grid-area: urInfo;
+}
+
+.footer__copy {
+grid-area: copy;
+}  */
