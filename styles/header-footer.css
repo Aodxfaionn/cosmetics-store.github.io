@@ -1,0 +1,115 @@
+/* Хедер */
+.header {
+  display: flex;
+  height: 130px;
+}
+
+.header__logo {
+  margin: 40px 100px auto 120px;
+}
+
+.header__nav {
+  display: flex;
+  padding: 0px;
+  gap: 25px;
+  width: 782px;
+  height: 27px;
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.header__icons {
+  display: flex;
+  gap: 10px;
+  width: 200px;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+/* Футер */
+.footer {
+  font-family: "Roboto", sans-serif;
+  margin: 127px 100px auto 121px;
+  display: grid;
+  column-gap: 100px;
+  row-gap: 50px;
+  grid-template-areas:
+    "about catalog info social"
+    "about catalog pay pay"
+    "ur ur copy copy";
+}
+
+.footer__about {
+  grid-area: about;
+  font-weight: 700;
+  font-size: 22px;
+  color: #828282;
+}
+
+.footer__about-adress {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.footer__catalog {
+  grid-area: catalog;
+  margin-right: 50px;
+}
+
+.footer__catalog-title,
+.footer__info-title,
+.footer__social-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer__catalog-item {
+  margin-bottom: 8px;
+}
+
+.footer__info {
+  grid-area: info;
+}
+
+.footer__social {
+  grid-area: social;
+}
+
+.footer__social a {
+  margin-right: 5px;
+}
+
+.footer__pay {
+  grid-area: pay;
+  opacity: 0.5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__urInfo,
+.footer__copy {
+  font-size: 16px;
+  line-height: 150%;
+  color: #b7b7b7;
+}
+
+.footer__urInfo {
+  grid-area: ur;
+}
+
+.footer__urInfo p {
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.footer__copy {
+  text-align: right;
+  grid-area: copy;
+}
