@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KK Shop</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,45 +15,67 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="./img/logo.png" alt="KK shop">
+            <a href="../main-page.html"><img src="../img/logo.png" alt="KK shop"></a>
         </div>
         <nav>
             <ul class="header__nav">
+                <div>
+                    <li class="header__nav-list">
+                        <a href="#">Каталог</a>
+                    </li>
+                    <div class="header__nav-catalog">
+                        <ul>
+                            <a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Очищение</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Пилинги и скрабы</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Тоники</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Крема</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Концентраты</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Сыворотки</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Эссенции</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Эмульсии и гели</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Маски для лица</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Уход ща телом</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Уход за волосами</li>
+                            </a><a href="../pages/catalog.html">
+                                <li class="footer__catalog-item">Наборы и аксессуары</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
                 <li>
-                    <a href="#">Главная</a>
+                    <a href="../pages/club.html">Клуб косметологов</a>
                 </li>
                 <li>
-                    <a href="#">Каталог</a>
+                    <a href="../pages/dostavka.html">Доставка и оплата</a>
                 </li>
                 <li>
-                    <a href="#">Клуб косметологов</a>
+                    <a href="../pages/contacts.html">Контакты</a>
                 </li>
                 <li>
-                    <a href="#">Сертификаты</a>
-                </li>
-                <li>
-                    <a href="#">Доставка и оплата</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-                <li>
-                    <a href="#">Блог</a>
+                    <a href="../pages/blog.html">Блог</a>
                 </li>
             </ul>
         </nav>
         <ul class="header__icons">
-            <li>
-                <a href="#"><img src="./img/header/icon search.png"></a>
+            <li class="header__icons-item">
+                <a href="#"><img src="../img/header/icon heart.png"></a>
             </li>
-            <li>
-                <a href="#"><img src="./img/header/icon heart.png"></a>
+            <li class="header__icons-item">
+                <a href="#"><img src="../img/header/Component 3.png"></a>
             </li>
-            <li>
-                <a href="#"><img src="./img/header/Component 3.png"></a>
-            </li>
-            <li>
-                <a href="#"><img src="./img/header/icon profile.png"></a>
+            <li class="header__icons-item">
+                <a href="#"><img src="../img/header/icon profile.png"></a>
             </li>
         </ul>
     </header>
@@ -83,21 +105,24 @@
                 <p class="dostavka__variant-prim">при заказе от 40 000 руб. - бесплатно</p>
                 <h4>Самовывоз</h4>
                 <p class="dostavka__variant-quanity">12 магазинов</p>
-                <div class="dostavka__variant-block"><img src="./img/dostavka/cart.svg" width="31px" height="44px"
+                <div class="dostavka__variant-block"><img src="../img/dostavka/cart.svg" width="31px" height="44px"
                         alt="cart">
                     <p>Добавьте товары в корзину, и мы рассчитаем точные условия доставки для вашего заказа</p>
                 </div>
-                <button type="button" class="dostavka__variant-btn"><a href="#">Перейти в каталог</a></button>
+                <button type="button" class="dostavka__variant-btn"><a href="catalog.html">Перейти в
+                        каталог</a></button>
             </div>
-            <img src="./img/dostavka/dostavka.jpg" alt="Dostavka" width="584px" height="332px">
+            <img src="../img/dostavka/dostavka.jpg" alt="Dostavka" width="584px" height="332px">
         </div>
         <div class="dostavka__pravila">
             <h3 class="dostavka__pravila-title">Правила предоставления услуг</h3>
             <ul class="pravila__list">
-                <li class="pravila__list-active">Доставка</li>
-                <li class="pravila__list-noActive">Правила приема товара</li>
+                <li class="pravila__list-item pravila__list-active" data-tab-name="pravila__containerDostavka">Доставка
+                </li>
+                <li class="pravila__list-item pravila__list-noActive" data-tab-name="pravila__containerPravila">Правила
+                    приема товара</li>
             </ul>
-            <div class="pravila__containerDostavka none">
+            <div class="pravila__container pravila__containerDostavka none">
                 <ol>
                     <li class="pravila__containerDostavka-item">
                         Быстрая доставка действует во всех городах присутствия. Обращаем внимание, в Екатеринбурге
@@ -128,20 +153,23 @@
                             заказа выберите способ доставки «самовывоз из магазина». Как только заказ будет собран, вы
                             получите SMS-сообщение.Заберите ваш заказ из магазина.</p>
                     </li>
-                    <li class="pravila__containerDostavka-item">Курьерская доставка на выбранный адрес. Доставка осуществляется курьерскими компаниями.
+                    <li class="pravila__containerDostavka-item">Курьерская доставка на выбранный адрес. Доставка
+                        осуществляется курьерскими компаниями.
                         Доступные способы оплаты: банковской картой, наличными, применение подарочной карты невозможно.
                         Обращаем ваше внимание, курьерская служба Золотого Яблока принимает только безналичный расчёт.
                     </li>
-                    <li class="pravila__containerDostavka-item">Самовывоз из пунктов выдачи заказов курьерских служб. Перечень адресов выдачи доступен при
+                    <li class="pravila__containerDostavka-item">Самовывоз из пунктов выдачи заказов курьерских служб.
+                        Перечень адресов выдачи доступен при
                         выборе данного способа доставки.
                         Доступные способы оплаты: банковской картой при наличии технической возможности, наличными,
                         применение бонусов невозможно. Подарочные карты к оплате не принимаются.</li>
-                    <li class="pravila__containerDostavka-item">Самовывоз из почтовых отделений Почты России, доставку осуществляет ФГУП «Почта России».
+                    <li class="pravila__containerDostavka-item">Самовывоз из почтовых отделений Почты России, доставку
+                        осуществляет ФГУП «Почта России».
                         Доступные способы оплаты: банковской картой при наличии технической возможности, наличными,
                         применение бонусов невозможно. Подарочные карты к оплате не принимаются.</li>
                 </ol>
             </div>
-            <div class="pravila__containerPravila">
+            <div class="pravila__container pravila__containerPravila">
                 <p><b>При получении заказа рекомендуем выполнить следующие действия: </b></p>
                 <p>Проверить целостность внешней упаковки и коробки. </p>
                 <p>После вскрытия внешней упаковки проверить содержимое заказа на предмет соответствия заказу и
@@ -150,7 +178,8 @@
                 <ul>
                     <li>Вскрытие упаковки возможно только у оплаченного заказа (при получении заказа без предоплаты
                         необходимо сначала произвести оплату); </li>
-                    <li class="pravila__containerDostavka-item">Нельзя вскрывать индивидуальную упаковку товара, если это нарушает товарный вид. </li>
+                    <li class="pravila__containerDostavka-item">Нельзя вскрывать индивидуальную упаковку товара, если
+                        это нарушает товарный вид. </li>
                 </ul>
                 <p><b>Получение не предоплаченных заказов</b></p>
                 <p>Оплата курьеру при доставке возможна наличными или банковской картой (в зависимости от курьерской
@@ -159,26 +188,39 @@
                     только безналичный расчёт.</p>
                 <p>Возможности оплаты в пункте самовывоза будут видны Вам после выбора конкретного пункта.</p>
                 <p>Оплата в почтовом отделении Почты России возможна только наличными.</p>
-                <p class="pravila__containerDostavka-item">Вместе с заказом курьер выдаст Вам кассовый чек и накладную, содержащую информацию с составом
+                <p class="pravila__containerDostavka-item">Вместе с заказом курьер выдаст Вам кассовый чек и накладную,
+                    содержащую информацию с составом
                     заказа.</p>
                 <p><b>Получение предоплаченных заказов</b></p>
-                <p class="pravila__containerDostavka-item">Доставка и вручение предоплаченных заказов осуществляется по адресу, указанному при оформлении
+                <p class="pravila__containerDostavka-item">Доставка и вручение предоплаченных заказов осуществляется по
+                    адресу, указанному при оформлении
                     заказа. Выдача предоплаченных заказов производится при предъявлении документа, удостоверяющего
                     личность получателя.</p>
                 <p><b>Eсли изменился получатель</b></p>
-                <p class="pravila__containerDostavka-item">Если после оформления заказа изменился получатель заказа, то покупатель, который оформлял и
+                <p class="pravila__containerDostavka-item">Если после оформления заказа изменился получатель заказа, то
+                    покупатель, который оформлял и
                     оплачивал заказ, должен выдать новому получателю доверенность на получение предоплаченного заказа.
                     Доверенность можно оформить в свободной форме. </p>
                 <p><b>Если доставили другой заказ</b></p>
-                <p class="pravila__containerDostavka-item">В этом случае Вам необходимо сразу же вернуть заказ курьеру, оформив накладную и указать причины
+                <p class="pravila__containerDostavka-item">В этом случае Вам необходимо сразу же вернуть заказ курьеру,
+                    оформив накладную и указать причины
                     возврата заказа. </p>
+            </div>
+        </div>
+        <div class="b-popup none">
+            <div class="b-popup__window">
+                <span class="close">&times;</span>
+                <h2 class="b-popup__window-title">Покупай со скидкой</h2>
+                <p>Зарегистрируйтесь, чтобы получить скидку по бонусной карте, начать копить бонусы и оплачивать покупки
+                    подарочными сертификатами.</p>
+                <button type="button" class="skindom__btn-login"><a href="#">Войти/зарегистрироваться</a></button>
+                <button type="button" class="skindom__btn-guest"><a href="#">Продолжить как гость</a></button>
             </div>
         </div>
     </main>
 
-
     <footer class="footer">
-        <div class="footer__about"><img src="./img/logo.png" alt="KK shop">
+        <div class="footer__about"><img src="../img/logo.png" alt="KK shop">
             <p>8 495 259 25 00 </p>
             <p>Sale@kkshop.ru</p>
             <p class="footer__about-adress">Москва, ул. Шаболовка, д. 34, стр. 7</p>
@@ -186,29 +228,29 @@
         <div class="footer__catalog">
             <h3 class="footer__catalog-title">Каталог</h3>
             <ul>
-                <a href="#">
+                <a href=".catalog.html">
                     <li class="footer__catalog-item">Очищение</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Пилинги и скрабы</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Тоники</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Крема</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Концентраты</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Сыворотки</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Эссенции</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Эмульсии и гели</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Маски для лица</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Уход ща телом</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Уход за волосами</li>
-                </a><a href="#">
+                </a><a href="./catalog.html">
                     <li class="footer__catalog-item">Наборы и аксессуары</li>
                 </a>
             </ul>
@@ -216,19 +258,15 @@
         <div class="footer__info">
             <h3 class="footer__info-title">Информация</h3>
             <ul>
-                <a href="#">
+                <a href="../club.html">
                     <li class="footer__catalog-item">Клуб косметологов</li>
-                </a><a href="#">
-                    <li class="footer__catalog-item">Сертификаты</li>
-                </a><a href="#">
+                </a><a href="../dostavka.html">
                     <li class="footer__catalog-item">Доставка и оплата</li>
                 </a><a href="#">
                     <li class="footer__catalog-item">Конфиденциальность</li>
-                </a><a href="#">
-                    <li class="footer__catalog-item">Концентраты</li>
-                </a><a href="#">
+                </a><a href="../contacts.html">
                     <li class="footer__catalog-item">Контакты</li>
-                </a><a href="#">
+                </a><a href="../blog.html">
                     <li class="footer__catalog-item">Блог</li>
                 </a><a href="#">
                     <li class="footer__catalog-item">Возврат</li>
@@ -237,29 +275,32 @@
         </div>
         <div class="footer__social">
             <h3 class="footer__social-title">Мы в социальных сетях</h3>
-            <a href="#"><img src="./img/footer/watsapp.png" alt="Social"></a>
-            <a href="#"><img src="./img/footer/telegramm.png" alt="Social"></a>
-            <a href="#"><img src="./img/footer/viber.png" alt="Social"></a>
-            <a href="#"><img src="./img/footer/facebook.png" alt="Social"></a>
-            <a href="#"><img src="./img/footer/instagramm.png" alt="Social"></a>
-            <a href="#"><img src="./img/footer/vk.png" alt="Social"></a>
+            <a href="#"><img src="../img/footer/watsapp.png" alt="Social"></a>
+            <a href="#"><img src="../img/footer/telegramm.png" alt="Social"></a>
+            <a href="#"><img src="../img/footer/viber.png" alt="Social"></a>
+            <a href="#"><img src="../img/footer/facebook.png" alt="Social"></a>
+            <a href="#"><img src="../img/footer/instagramm.png" alt="Social"></a>
+            <a href="#"><img src="../img/footer/vk.png" alt="Social"></a>
         </div>
         <div class="footer__pay">
-            <a href="#"><img src="./img/footer/mir.png" alt="Pay"></a>
-            <a href="#"><img src="./img/footer/masterCard.png" alt="Pay"></a>
-            <a href="#"><img src="./img/footer/visa.png" alt="Pay"></a>
-            <a href="#"><img src="./img/footer/webmoney.png" alt="Pay"></a>
-            <a href="#"><img src="./img/footer/yandex.png" alt="Pay"></a>
-            <a href="#"><img src="/img/footer/googlePay.png" alt="Pay"></a>
+            <a href="#"><img src="../img/footer/mir.png" alt="Pay"></a>
+            <a href="#"><img src="../img/footer/masterCard.png" alt="Pay"></a>
+            <a href="#"><img src="../img/footer/visa.png" alt="Pay"></a>
+            <a href="#"><img src="../img/footer/webmoney.png" alt="Pay"></a>
+            <a href="#"><img src="../img/footer/yandex.png" alt="Pay"></a>
+            <a href="#"><img src="../img/footer/googlePay.png" alt="Pay"></a>
         </div>
         <div class="footer__urInfo">ООО «Шармира»
             <p>ОГРН 1167746492704</p>
             <p>KK Shop © Москва 2022 Все права защищены.</p>
         </div>
-        <div class="footer__copy">Все торговые марки принадлежат их владельцам. Копирование составляющих частей
-            сайта в
+        <div class="footer__copy">Все торговые марки принадлежат их владельцам. Копирование составляющих частей сайта в
             какой бы то ни было форме без разрешения владельца авторских прав запрещено.</div>
     </footer>
+    <script src="../js/modal.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/tab.js"></script>
+    <script src="../js/slider.js"></script>
 </body>
 
 </html>
