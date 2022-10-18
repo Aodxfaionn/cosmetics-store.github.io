@@ -52,7 +52,8 @@ a:active {
   top: 295px;
 }
 
-.skindom__btn {
+.skindom__btn,
+.club__btn {
   position: absolute;
   left: 120px;
   top: 380px;
@@ -124,7 +125,6 @@ a:active {
 }
 
 .newProduct,
-.actionProduct,
 .recommend,
 .catalog,
 .product {
@@ -193,12 +193,20 @@ a:active {
   font-size: 12px;
 }
 
-.action {
-  height: 420px;
-  width: 800px;
-  margin: 0 auto;
+.actionProduct {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.action {
+  height: 480px;
+  width: 630px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   overflow-x: hidden;
   overflow-y: scroll;
   box-shadow: 1px 1px 7px 1px #c8c2c2;
@@ -217,13 +225,17 @@ a:active {
 }
 
 .action__slider-card {
-  width: 800px;
+  width: 650px;
   height: 420px;
   text-align: center;
 }
 
 .action__slider-card:hover {
   cursor: pointer;
+}
+
+.action__title {
+  margin-bottom: 0;
 }
 
 .action__card-title {
@@ -332,13 +344,12 @@ a:active {
   position: absolute;
   left: 120px;
   top: 548px;
-  left: 118px;
   opacity: 0.7;
 }
 
 .club__btn {
   top: 670px;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .club__btn:hover {
@@ -407,12 +418,12 @@ a:active {
 
 /* Доставка и оплата */
 .dostavka-title {
-  margin-left: 121px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 40px;
   line-height: 200%;
   letter-spacing: 0.3em;
+  text-align: center;
 }
 
 .dostavka {
